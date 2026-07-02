@@ -4,15 +4,11 @@ const FECHA_INICIO_RETO = new Date(2026, 6, 2); // 2 de Julio del 2026
 const FECHA_CUMPLEANOS = new Date(2026, 7, 2); // 2 de Agosto de 2026
 
 
-// ==========================================
-// DATOS DE LOS 30 DÍAS (Tus escritos)
-// ==========================================
-// Aquí puedes ir rellenando el título y texto de cada día.
+// DATOS DE LOS 30 DÍAS
 const contenidoDias = {
     1: { titulo: "El inicio del viaje", texto: "Aquí va tu primer escrito romántico, un recuerdo o una pista especial..." },
     2: { titulo: "Nuestra primera cita", texto: "Todavía me acuerdo de los nervios que tenía ese día y de lo hermosa que te veías..." },
     3: { titulo: "Tu sonrisa", texto: "Una de las 10 razones por las que me enamoré perdidamente de ti..." },
-    // Puedes seguir agregando del 4 al 30 de la misma forma...
 };
 
 // GENERACIÓN DINÁMICA DE LA RUTA (30 DÍAS)
@@ -37,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         item.classList.add("timeline-item", lado);
         item.setAttribute("data-day", i);
 
-        // Verificar si el día está desbloqueado (si es menor o igual a los días transcurridos)
+        // Verificar si el día está desbloqueado
         // Nota: Si quieres probar el diseño de todos desbloqueados, cambia 'i <= diasTranscurridos' por 'true'
         const estaDesbloqueado = i <= diasTranscurridos;
 
@@ -104,8 +100,44 @@ function actualizarCountdown() {
     document.getElementById("seconds").innerText = segundos.toString().padStart(2, '0');
 }
 
-// EFECTOS ESPECIALES AL HACER CLIC
+// ==========================================
+// CONTROL DEL MODAL (VENTANA EMERGENTE)
+// ==========================================
 function abrirSorpresa(dia) {
-    // Aquí puedes meter una alerta bonita o activar efectos de confeti más adelante
-    alert(`¡Abriste el regalo del Día ${dia}! Aquí puedes poner código para abrir una ventana modal o reproducir su canción favorita.`);
+    const modal = document.getElementById("surprise-modal");
+    const modalDay = document.getElementById("modal-day-text");
+    const modalTitle = document.getElementById("modal-title");
+    const modalText = document.getElementById("modal-text");
+
+    // Obtener los datos del día clicado
+    const datosDia = contenidoDias[dia] || { 
+        titulo: `Día ${dia.toString().padStart(2, '0')}`, 
+        texto: "¡Ups! Olvidaste rellenar el escrito de este día en el objeto 'contenidoDias'." 
+    };
+
+    // Inyectar el contenido en el modal
+    modalDay.innerText = `Día ${dia.toString().padStart(2, '0')}`;
+    modalTitle.innerText = datosDia.titulo;
+    modalText.innerText = datosDia.texto;
+
+    // Mostrar el modal usando flexbox para centrarlo
+    modal.style.display = "flex";
 }
+
+// Lógica para cerrar el modal al hacer clic en la (X) o fuera de la tarjeta
+document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("surprise-modal");
+    const btnCerrar = document.querySelector(".close-modal");
+
+    // Cerrar desde la X
+    btnCerrar.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
+
+    // Cerrar si hace clic fuera del recuadro de la tarjeta (en el fondo difuminado)
+    window.addEventListener("click", (e) => {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});
