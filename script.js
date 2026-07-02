@@ -6,9 +6,156 @@ const FECHA_CUMPLEANOS = new Date(2026, 7, 2); // 2 de Agosto de 2026
 
 // Escritos de tus días
 const contenidoDias = {
-    1: { titulo: "El inicio del viaje", texto: "Aquí va tu primer escrito romántico, un recuerdo o una pista especial..." },
-    2: { titulo: "Nuestra primera cita", texto: "Todavía me acuerdo de los nervios que tenía ese día y de lo hermosa que te veías..." },
-    3: { titulo: "Tu sonrisa", texto: "Una de las 10 razones por las que me enamoré perdidamente de ti..." },
+    1: {
+        titulo: "El inicio del viaje",
+        pista: "¿Dónde comenzó todo?",
+        texto: "Aquí va tu primer escrito romántico, un recuerdo o una pista especial..."
+    },
+    2: {
+        titulo: "Nuestra primera cita",
+        pista: "",
+        texto: "Todavía me acuerdo de los nervios que tenía ese día y de lo hermosa que te veías..."
+    },
+    3: { 
+        titulo: "Tu sonrisa",
+        pista: "",
+        texto: "Una de las 10 razones por las que me enamoré perdidamente de ti..."
+    },
+    4: {
+        titulo: "",
+        pista: "",
+        texto: ""
+    },
+    5: {
+        titulo: "",
+        pista: "",
+        texto: ""
+    },
+    6: {
+        titulo: "",
+        pista: "",
+        texto: ""
+    },
+    7: {
+        titulo: "",
+        pista: "",
+        texto: ""
+    },
+    8: {
+        titulo: "",
+        pista: "",
+        texto: ""
+    },
+    9: {
+        titulo: "",
+        pista: "",
+        texto: ""
+    },
+    10: {
+        titulo: "",
+        pista: "",
+        texto: ""
+    },
+    11: {
+        titulo: "",
+        pista: "",
+        texto: ""
+    },
+    12: {
+        titulo: "",
+        pista: "",
+        texto: ""
+    },
+    13: {
+        titulo: "",
+        pista: "",
+        texto: ""
+    },
+    14: {
+        titulo: "",
+        pista: "",
+        texto: ""
+    },
+    15: {
+        titulo: "",
+        pista: "",
+        texto: ""
+    },
+    16: {
+        titulo: "",
+        pista: "",
+        texto: ""
+    },
+    17: {
+        titulo: "",
+        pista: "",
+        texto: ""
+    },
+    18: {
+        titulo: "",
+        pista: "",
+        texto: ""
+    },
+    19: {
+        titulo: "",
+        pista: "",
+        texto: ""
+    },
+    20: {
+        titulo: "",
+        pista: "",
+        texto: ""
+    },
+    21: {
+        titulo: "",
+        pista: "",
+        texto: ""
+    },
+    22: {
+        titulo: "",
+        pista: "",
+        texto: ""
+    },
+    23: {
+        titulo: "",
+        pista: "",
+        texto: ""
+    },
+    24: {
+        titulo: "",
+        pista: "",
+        texto: ""
+    },
+    25: {
+        titulo: "",
+        pista: "",
+        texto: ""
+    },
+    26: {
+        titulo: "",
+        pista: "",
+        texto: ""
+    },
+    27: {
+        titulo: "",
+        pista: "",
+        texto: ""
+    },
+    28: {
+        titulo: "",
+        pista: "",
+        texto: ""
+    },
+    29: {
+        titulo: "",
+        pista: "",
+        texto: ""
+    },
+    30: {
+        titulo: "",
+        pista: "",
+        texto: ""
+    },
 };
 
 // ==========================================
@@ -123,7 +270,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="card">
                     <span class="day-number">Día ${i.toString().padStart(2, '0')}</span>
                     <h3>${datosDia.titulo}</h3>
-                    <p>${datosDia.texto}</p>
+                    <p>${datosDia.pista}</p>
                     <button class="btn-open" onclick="abrirSorpresa(${i})">Abrir sorpresa</button>
                 </div>
             `;
