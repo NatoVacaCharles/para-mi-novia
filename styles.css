@@ -1,0 +1,275 @@
+/* ==========================================================================
+   RESET Y CONFIGURACIÓN GENERAL
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, #060713, #0b0e24, #1a103c, #060713);
+    color: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding-bottom: 100px;
+}
+
+/* Fondo de estrellas parpadeantes básicas */
+.stars-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+/* ==========================================================================
+   HEADER & COUNTDOWN
+   ========================================================================== */
+.header {
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+}
+
+.title {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2.5rem;
+    color: #f3e5ab;
+    text-shadow: 0 0 15px rgba(243, 229, 171, 0.6);
+    margin-bottom: 20px;
+}
+
+.countdown-subtitle {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #a1a8cd;
+    margin-bottom: 10px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.time-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(243, 229, 171, 0.2);
+    padding: 10px 15px;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    min-width: 70px;
+}
+
+.time-box span {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #f3e5ab;
+}
+
+.time-box label {
+    font-size: 0.7rem;
+    color: #8a92b6;
+    text-transform: uppercase;
+}
+
+/* ==========================================================================
+   RUTA VERTICAL (TIMELINE DE CONSTELACIÓN)
+   ========================================================================== */
+.timeline-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* La línea de la constelación */
+.constellation-line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(243, 229, 171, 0.8), rgba(138, 43, 226, 0.5), rgba(243, 229, 171, 0.2));
+    box-shadow: 0 0 10px rgba(243, 229, 171, 0.5);
+    z-index: 1;
+}
+
+/* Contenedor de cada día */
+.timeline-item {
+    position: relative;
+    width: 50%;
+    margin-bottom: 60px;
+    z-index: 2;
+}
+
+/* Alternancia izquierda / derecha */
+.timeline-item.left {
+    left: 0;
+    padding-right: 50px;
+}
+
+.timeline-item.right {
+    left: 50%;
+    padding-left: 50px;
+}
+
+/* Los nodos/estrellas de la constelación */
+.star-node {
+    position: absolute;
+    top: 25px;
+    font-size: 1.5rem;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    transition: all 0.5s ease;
+}
+
+.timeline-item.left .star-node {
+    right: -15px;
+}
+
+.timeline-item.right .star-node {
+    left: -15px;
+}
+
+/* Las tarjetas */
+.card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.day-number {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #8a92b6;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #c3c7db;
+    line-height: 1.5;
+}
+
+/* ==========================================================================
+   ESTADOS: DESBLOQUEADO VS BLOQUEADO
+   ========================================================================== */
+
+/* 1. Estado Desbloqueado */
+.timeline-item.unlocked .star-node {
+    color: #f3e5ab;
+    text-shadow: 0 0 15px #f3e5ab, 0 0 30px #f3e5ab;
+    animation: pulse 2s infinite alternate;
+}
+
+.timeline-item.unlocked .card {
+    border-color: rgba(243, 229, 171, 0.3);
+    box-shadow: 0 5px 20px rgba(243, 229, 171, 0.05);
+}
+
+.timeline-item.unlocked .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(243, 229, 171, 0.15);
+}
+
+.timeline-item.unlocked .day-number {
+    color: #f3e5ab;
+}
+
+.btn-open {
+    background: linear-gradient(135deg, #f3e5ab, #e6c687);
+    color: #060713;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn-open:hover {
+    transform: scale(1.05);
+}
+
+/* 2. Estado Bloqueado */
+.timeline-item.locked {
+    filter: grayscale(80%);
+    opacity: 0.5;
+}
+
+.timeline-item.locked .star-node {
+    color: #4a4f6d;
+}
+
+.timeline-item.locked .card {
+    background: rgba(0, 0, 0, 0.2);
+    user-select: none;
+    pointer-events: none;
+    /* Evita que haga clic */
+}
+
+.lock-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+/* Animación de la estrella brillante */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1.2);
+        opacity: 1;
+        text-shadow: 0 0 20px #f3e5ab;
+    }
+}
+
+/* Responsive para celulares */
+@media (max-width: 768px) {
+    .constellation-line {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        left: 0 !important;
+        padding-left: 45px !important;
+        padding-right: 0 !important;
+    }
+
+    .star-node {
+        left: 5px !important;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 Días Para Tu Cumpleaños</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Montserrat:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="stars-container">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+    </div>
+
+    <header class="header">
+        <h1 class="title">30 Días Para Tu Cumpleaños</h1>
+        <div class="countdown-container">
+            <p class="countdown-subtitle">El gran día comienza en:</p>
+            <div class="countdown">
+                <div class="time-box"><span id="days">00</span><label>Días</label></div>
+                <div class="time-box"><span id="hours">00</span><label>Horas</label></div>
+                <div class="time-box"><span id="minutes">00</span><label>Min</label></div>
+                <div class="time-box"><span id="seconds">00</span><label>Seg</label></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="timeline-container">
+        <div class="constellation-line"></div>
+
+        <div class="timeline-item left unlocked" data-day="1">
+            <div class="star-node">✦</div>
+            <div class="card">
+                <span class="day-number">Día 01</span>
+                <h3>El inicio del viaje</h3>
+                <p>Aquí irá tu primer escrito romántico, un recuerdo o una pista especial...</p>
+                <button class="btn-open">Abrir regalo</button>
+            </div>
+        </div>
+
+        <div class="timeline-item right locked" data-day="2">
+            <div class="star-node">✦</div>
+            <div class="card">
+                <div class="lock-icon">🔒</div>
+                <span class="day-number">Día 02</span>
+                <h3>???</h3>
+                <p>Este recuerdo aún está oculto en las estrellas.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item left locked" data-day="3">
+            <div class="star-node">✦</div>
+            <div class="card">
+                <div class="lock-icon">🔒</div>
+                <span class="day-number">Día 03</span>
+                <h3>???</h3>
+                <p>Vuelve cuando el tiempo sea el correcto.</p>
+            </div>
+        </div>
+
+    </main>
+<script src="script.js" defer></script>
+</body>
+
+</html>
