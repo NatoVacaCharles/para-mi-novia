@@ -1,43 +1,119 @@
-// CONFIGURACIÓN: CAMBIA ESTAS FECHAS
-const FECHA_INICIO_RETO = new Date(2026, 6, 2); // 2 de Julio del 2026
-
+// ==========================================
+// 1. CONFIGURACIÓN DE FECHAS
+// ==========================================
+const FECHA_INICIO_RETO = new Date(2026, 6, 2); // 2 de Julio de 2026
 const FECHA_CUMPLEANOS = new Date(2026, 7, 2); // 2 de Agosto de 2026
 
-
-// DATOS DE LOS 30 DÍAS
+// Escritos de tus días
 const contenidoDias = {
     1: { titulo: "El inicio del viaje", texto: "Aquí va tu primer escrito romántico, un recuerdo o una pista especial..." },
     2: { titulo: "Nuestra primera cita", texto: "Todavía me acuerdo de los nervios que tenía ese día y de lo hermosa que te veías..." },
     3: { titulo: "Tu sonrisa", texto: "Una de las 10 razones por las que me enamoré perdidamente de ti..." },
 };
 
-// GENERACIÓN DINÁMICA DE LA RUTA (30 DÍAS)
+// ==========================================
+// 2. CONSTELACIONES DE FONDO (CANVAS)
+// ==========================================
+const canvas = document.getElementById("constellationCanvas");
+const ctx = canvas.getContext("2d");
+let starsArray = [];
+const NUMBER_OF_STARS = 85; 
+const CONNECTION_DISTANCE = 120; 
+
+function resizeCanvas() {
+    if(canvas) {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+}
+window.addEventListener("resize", resizeCanvas);
+resizeCanvas();
+
+class Star {
+    constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 2 + 0.5;
+        this.speedX = (Math.random() - 0.5) * 0.2;
+        this.speedY = (Math.random() - 0.5) * 0.2;
+        this.opacity = Math.random() * 0.7 + 0.3;
+        this.fadeSpeed = (Math.random() - 0.5) * 0.01;
+    }
+    update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+        if (this.x < 0 || this.x > canvas.width) this.speedX = -this.speedX;
+        if (this.y < 0 || this.y > canvas.height) this.speedY = -this.speedY;
+        this.opacity += this.fadeSpeed;
+        if (this.opacity < 0.2 || this.opacity > 0.9) this.fadeSpeed = -this.fadeSpeed;
+    }
+    draw() {
+        ctx.fillStyle = `rgba(243, 229, 171, ${this.opacity})`;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+    }
+}
+
+function initStars() {
+    starsArray = [];
+    for (let i = 0; i < NUMBER_OF_STARS; i++) {
+        starsArray.push(new Star());
+    }
+}
+
+function connectStars() {
+    for (let a = 0; a < starsArray.length; a++) {
+        for (let b = a; b < starsArray.length; b++) {
+            let dx = starsArray[a].x - starsArray[b].x;
+            let dy = starsArray[a].y - starsArray[b].y;
+            let distance = Math.sqrt(dx * dx + dy * dy);
+
+            if (distance < CONNECTION_DISTANCE) {
+                let alpha = (1 - (distance / CONNECTION_DISTANCE)) * 0.15;
+                ctx.strokeStyle = `rgba(243, 229, 171, ${alpha})`;
+                ctx.lineWidth = 0.5;
+                ctx.beginPath();
+                ctx.moveTo(starsArray[a].x, starsArray[a].y);
+                ctx.lineTo(starsArray[b].x, starsArray[b].y);
+                ctx.stroke();
+            }
+        }
+    }
+}
+
+function animateBackground() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    for (let i = 0; i < starsArray.length; i++) {
+        starsArray[i].update();
+        starsArray[i].draw();
+    }
+    connectStars();
+    requestAnimationFrame(animateBackground);
+}
+
+// ==========================================
+// 3. LOGICA PRINCIPAL (AL CARGAR LA PAGINA)
+// ==========================================
 document.addEventListener("DOMContentLoaded", () => {
+    // Inicializar Fondo
+    resizeCanvas();
+    initStars();
+    animateBackground();
+
+    // Generar Línea de Tiempo
     const timelineContainer = document.querySelector(".timeline-container");
-    
-    // Calcular cuántos días han pasado desde la fecha de inicio
     const hoy = new Date();
     const diferenciaTiempo = hoy - FECHA_INICIO_RETO;
     const diasTranscurridos = Math.floor(diferenciaTiempo / (1000 * 60 * 60 * 24)) + 1;
 
-    // Limpiamos los días de prueba que pusimos en el HTML (dejando solo la línea central)
-    const itemsPrueba = timelineContainer.querySelectorAll(".timeline-item");
-    itemsPrueba.forEach(item => item.remove());
-
-    // Bucle para generar los 30 días
+    // Generar los 30 días automáticamente
     for (let i = 1; i <= 30; i++) {
         const item = document.createElement("div");
-        
-        // Alternar izquierda y derecha
         const lado = (i % 2 !== 0) ? "left" : "right";
         item.classList.add("timeline-item", lado);
-        item.setAttribute("data-day", i);
 
-        // Verificar si el día está desbloqueado
-        // Nota: Si quieres probar el diseño de todos desbloqueados, cambia 'i <= diasTranscurridos' por 'true'
         const estaDesbloqueado = i <= diasTranscurridos;
-
-        // Obtener datos personalizados o usar unos por defecto si aún no los escribes
         const datosDia = contenidoDias[i] || { titulo: `Día ${i.toString().padStart(2, '0')}`, texto: "El futuro aguarda una hermosa sorpresa." };
 
         if (estaDesbloqueado) {
@@ -63,45 +139,26 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
             `;
         }
-
         timelineContainer.appendChild(item);
     }
 
-    // Iniciar el temporizador
+    // Temporizador
     actualizarCountdown();
     setInterval(actualizarCountdown, 1000);
+
+    // Configurar Cierre del Modal
+    const modal = document.getElementById("surprise-modal");
+    const btnCerrar = document.querySelector(".close-modal");
+    if(btnCerrar) {
+        btnCerrar.addEventListener("click", () => modal.style.display = "none");
+    }
+    window.addEventListener("click", (e) => {
+        if (e.target === modal) modal.style.display = "none";
+    });
 });
 
-// TEMPORIZADOR
-function actualizarCountdown() {
-    const ahora = new Date().getTime();
-    const distancia = FECHA_CUMPLEANOS.getTime() - ahora;
-
-    // Si ya llegó la fecha del cumpleaños
-    if (distancia < 0) {
-        document.getElementById("days").innerText = "00";
-        document.getElementById("hours").innerText = "00";
-        document.getElementById("minutes").innerText = "00";
-        document.getElementById("seconds").innerText = "00";
-        document.querySelector(".countdown-subtitle").innerText = "¡FELIZ CUMPLEANOS! ❤️";
-        return;
-    }
-
-    // Cálculos de tiempo
-    const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
-    const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
-    const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
-
-    // Mostrar resultados en el HTML formateados con dos dígitos
-    document.getElementById("days").innerText = dias.toString().padStart(2, '0');
-    document.getElementById("hours").innerText = horas.toString().padStart(2, '0');
-    document.getElementById("minutes").innerText = minutos.toString().padStart(2, '0');
-    document.getElementById("seconds").innerText = segundos.toString().padStart(2, '0');
-}
-
 // ==========================================
-// CONTROL DEL MODAL (VENTANA EMERGENTE)
+// 4. FUNCIONES AUXILIARES (MODAL Y COUNTDOWN)
 // ==========================================
 function abrirSorpresa(dia) {
     const modal = document.getElementById("surprise-modal");
@@ -109,35 +166,28 @@ function abrirSorpresa(dia) {
     const modalTitle = document.getElementById("modal-title");
     const modalText = document.getElementById("modal-text");
 
-    // Obtener los datos del día clicado
-    const datosDia = contenidoDias[dia] || { 
-        titulo: `Día ${dia.toString().padStart(2, '0')}`, 
-        texto: "¡Ups! Olvidaste rellenar el escrito de este día en el objeto 'contenidoDias'." 
-    };
+    const datosDia = contenidoDias[dia] || { titulo: `Día ${dia.toString().padStart(2, '0')}`, texto: "El futuro aguarda una hermosa sorpresa." };
 
-    // Inyectar el contenido en el modal
     modalDay.innerText = `Día ${dia.toString().padStart(2, '0')}`;
     modalTitle.innerText = datosDia.titulo;
     modalText.innerText = datosDia.texto;
-
-    // Mostrar el modal usando flexbox para centrarlo
     modal.style.display = "flex";
 }
 
-// Lógica para cerrar el modal al hacer clic en la (X) o fuera de la tarjeta
-document.addEventListener("DOMContentLoaded", () => {
-    const modal = document.getElementById("surprise-modal");
-    const btnCerrar = document.querySelector(".close-modal");
+function actualizarCountdown() {
+    const ahora = new Date().getTime();
+    const distancia = FECHA_CUMPLEANOS.getTime() - ahora;
 
-    // Cerrar desde la X
-    btnCerrar.addEventListener("click", () => {
-        modal.style.display = "none";
-    });
+    if (distancia < 0) {
+        document.getElementById("days").innerText = "00";
+        document.getElementById("hours").innerText = "00";
+        document.getElementById("minutes").innerText = "00";
+        document.getElementById("seconds").innerText = "00";
+        return;
+    }
 
-    // Cerrar si hace clic fuera del recuadro de la tarjeta (en el fondo difuminado)
-    window.addEventListener("click", (e) => {
-        if (e.target === modal) {
-            modal.style.display = "none";
-        }
-    });
-});
+    document.getElementById("days").innerText = Math.floor(distancia / (1000 * 60 * 60 * 24)).toString().padStart(2, '0');
+    document.getElementById("hours").innerText = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0');
+    document.getElementById("minutes").innerText = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
+    document.getElementById("seconds").innerText = Math.floor((distancia % (1000 * 60)) / 1000).toString().padStart(2, '0');
+}

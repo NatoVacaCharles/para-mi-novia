@@ -369,3 +369,19 @@ body {
         opacity: 1;
     }
 }
+
+/* ==========================================================================
+   FONDO DE CONSTELACIONES DINÁMICAS (CANVAS)
+   ========================================================================== */
+#constellationCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    /* Se mantiene estrictamente detrás del contenido */
+    background: radial-gradient(circle at center, #0c1033 0%, #050515 100%);
+    pointer-events: none;
+    /* Permite que se pueda hacer click en las tarjetas sin problema */
+}
