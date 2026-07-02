@@ -10,9 +10,10 @@ const contenidoDias = {
         titulo: "El inicio del viaje",
         pista: "¿Dónde comenzó todo?",
         texto: `
-        Si el destino fue quien quizo que estemos juntos pues definitivamente
-        fue el día que puse, sin saber que te encontraría, un pie en esa oficiona.
-        Si algo tengo guardado en mi memoria es la forma en que tu risa se
+        Si el destino fue quien quizo que estemos juntos pues
+        definitivamente fue el día que puse, sin saber que te
+        encontraría, un pie en esa oficiona. Si algo tengo
+        guardado en mi memoria es la forma en que tu risa se
         entrometía en la voz de la gente en la llamada.
         `
     },
@@ -20,10 +21,11 @@ const contenidoDias = {
         titulo: "Una primera mirada",
         pista: "¿Recuerdas cuando fue la primera vez que nos miramos a los ojos?",
         texto: `
-        Recuerdo un día que te acercaste directamente a Alicia, simplemente voltee
-        discretamente para saber quien se acercaba y ahí te ví. Los ademanes que realizabas
-        y la sonrisa que siempre tuviste se esbozaban en tu ser. Caí, sin todavía saber, en
-        la mirada y actitud de aquella mujer.
+        Recuerdo un día que te acercaste directamente a Alicia,
+        simplemente voltee discretamente para saber quien se
+        acercaba y ahí te ví. Los ademanes que realizabas y la
+        sonrisa que siempre tuviste se esbozaban en tu ser.
+        Caí, sin todavía saber, en la mirada y actitud de aquella mujer.
         `
     },
     3: { 
@@ -332,8 +334,8 @@ function abrirSorpresa(dia) {
 }
 
 function actualizarCountdown() {
-    const ahora = new Date().getTime();
-    const distancia = FECHA_CUMPLEANOS.getTime() - ahora;
+    const ahora = new Date();
+    const distancia = FECHA_CUMPLEANOS.getTime() - ahora.getTime();
 
     if (distancia < 0) {
         document.getElementById("days").innerText = "00";
@@ -342,9 +344,16 @@ function actualizarCountdown() {
         document.getElementById("seconds").innerText = "00";
         return;
     }
+    const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+    const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
 
-    document.getElementById("days").innerText = Math.floor(distancia / (1000 * 60 * 60 * 24)).toString().padStart(2, '0');
-    document.getElementById("hours").innerText = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0');
-    document.getElementById("minutes").innerText = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
-    document.getElementById("seconds").innerText = Math.floor((distancia % (1000 * 60)) / 1000).toString().padStart(2, '0');
+    document.getElementById("days").innerText = dias.toString().padStart(2, "0");
+    document.getElementById("hours").innerText = horas.toString().padStart(2, "0");
+    document.getElementById("minutes").innerText = minutos.toString().padStart(2, "0");
+    document.getElementById("seconds").innerText = segundos.toString().padStart(2, "0");
 }
+
+actualizarCountdown();
+setInterval(actualizarCountdown, 1000);
