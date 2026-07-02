@@ -9,17 +9,27 @@ const contenidoDias = {
     1: {
         titulo: "El inicio del viaje",
         pista: "¿Dónde comenzó todo?",
-        texto: "Aquí va tu primer escrito romántico, un recuerdo o una pista especial..."
+        texto: `
+        Si el destino fue quien quizo que estemos juntos pues definitivamente
+        fue el día que puse, sin saber que te encontraría, un pie en esa oficiona.
+        Si algo tengo guardado en mi memoria es la forma en que tu risa se
+        entrometía en la voz de la gente en la llamada.
+        `
     },
     2: {
-        titulo: "Nuestra primera cita",
-        pista: "",
-        texto: "Todavía me acuerdo de los nervios que tenía ese día y de lo hermosa que te veías..."
+        titulo: "Una primera mirada",
+        pista: "¿Recuerdas cuando fue la primera vez que nos miramos a los ojos?",
+        texto: `
+        Recuerdo un día que te acercaste directamente a Alicia, simplemente voltee
+        discretamente para saber quien se acercaba y ahí te ví. Los ademanes que realizabas
+        y la sonrisa que siempre tuviste se esbozaban en tu ser. Caí, sin todavía saber, en
+        la mirada y actitud de aquella mujer.
+        `
     },
     3: { 
-        titulo: "Tu sonrisa",
+        titulo: "",
         pista: "",
-        texto: "Una de las 10 razones por las que me enamoré perdidamente de ti..."
+        texto: ""
     },
     4: {
         titulo: "",
