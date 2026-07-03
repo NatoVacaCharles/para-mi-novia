@@ -28,145 +28,165 @@ const contenidoDias = {
         Caí, sin todavía saber, en la mirada y actitud de aquella mujer.
         `
     },
-    3: { 
-        titulo: "",
-        pista: "",
-        texto: ""
+    3: {
+        titulo: "¿Primer acercamiento?",
+        pista: "Apenas y un hola...",
+        texto: `
+        No negaré que cuando me mandaron a ese cuarto no te
+        dirigía ni la palabra y simplemente era porque siempre
+        he sido callado en esos ambientes. Sin embargo, he de admitir
+        que en mi atención si calabas, puesto que por tu forma
+        de ser siempre sabía si es que ahí te encontrabas.
+        `
     },
     4: {
-        titulo: "",
-        pista: "",
-        texto: ""
+        titulo: "Caminando juntos",
+        pista: "¿De Goyeneche al cruce? 😅",
+        texto: `
+        Sinceramente por mi cabeza nunca pasó caminar tanto conversando.
+        Yo pensé que simplemente llegaríamos unas cuadras más arriba y
+        tomarías tu carro para irte a tu casa. Sin embargo, desde esa
+        caminata larga y conversación amena, sentí que algo había cambiado.
+        No sé si lo sentiste, pero, inicialmente sentí que si nos ibamos a
+        llevar bien, pero, no pensé que podríamos llegar tan lejos en tan
+        poco tiempo.
+        `
     },
     5: {
-        titulo: "",
-        pista: "",
-        texto: ""
+        titulo: "Caminos por conectar",
+        pista: "Tener la misma ruta fue determinante",
+        texto: `
+        Rápidamente fue una costumbre innata, como si así debía de ser y
+        así se quedó. Paso a paso, palabra por palabra, risa por risa.
+        Terminar esa jornada laboral se volvió mi parte esperada del día,
+        como si solo esperara que empezara a trabjar para añorar la salida,
+        ya que en esa salida una gran compañía me esperaba.
+        `
     },
     6: {
         titulo: "",
         pista: "",
-        texto: ""
+        texto: ``
     },
     7: {
         titulo: "",
         pista: "",
-        texto: ""
+        texto: ``
     },
     8: {
         titulo: "",
         pista: "",
-        texto: ""
+        texto: ``
     },
     9: {
         titulo: "",
         pista: "",
-        texto: ""
+        texto: ``
     },
     10: {
         titulo: "",
         pista: "",
-        texto: ""
+        texto: ``
     },
     11: {
         titulo: "",
         pista: "",
-        texto: ""
+        texto: ``
     },
     12: {
         titulo: "",
         pista: "",
-        texto: ""
+        texto: ``
     },
     13: {
         titulo: "",
         pista: "",
-        texto: ""
+        texto: ``
     },
     14: {
         titulo: "",
         pista: "",
-        texto: ""
+        texto: ``
     },
     15: {
         titulo: "",
         pista: "",
-        texto: ""
+        texto: ``
     },
     16: {
         titulo: "",
         pista: "",
-        texto: ""
+        texto: ``
     },
     17: {
         titulo: "",
         pista: "",
-        texto: ""
+        texto: ``
     },
     18: {
         titulo: "",
         pista: "",
-        texto: ""
+        texto: ``
     },
     19: {
         titulo: "",
         pista: "",
-        texto: ""
+        texto: ``
     },
     20: {
         titulo: "",
         pista: "",
-        texto: ""
+        texto: ``
     },
     21: {
         titulo: "",
         pista: "",
-        texto: ""
+        texto: ``
     },
     22: {
         titulo: "",
         pista: "",
-        texto: ""
+        texto: ``
     },
     23: {
         titulo: "",
         pista: "",
-        texto: ""
+        texto: ``
     },
     24: {
         titulo: "",
         pista: "",
-        texto: ""
+        texto: ``
     },
     25: {
         titulo: "",
         pista: "",
-        texto: ""
+        texto: ``
     },
     26: {
         titulo: "",
         pista: "",
-        texto: ""
+        texto: ``
     },
     27: {
         titulo: "",
         pista: "",
-        texto: ""
+        texto: ``
     },
     28: {
         titulo: "",
         pista: "",
-        texto: ""
+        texto: ``
     },
     29: {
         titulo: "",
         pista: "",
-        texto: ""
+        texto: ``
     },
     30: {
         titulo: "",
         pista: "",
-        texto: ""
+        texto: ``
     },
 };
 
