@@ -353,8 +353,20 @@ body {
     font-size: 1rem;
     color: #e2e4f0;
     line-height: 1.7;
-    white-space: pre-line;
-    /* Respeta los saltos de línea de tus escritos */
+    white-space: normal;
+}
+
+/* Estilo para los enlaces dentro del modal */
+.modal-link {
+    color: #f3e5ab;
+    text-decoration: underline;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.modal-link:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #f3e5ab;
 }
 
 /* Animación de entrada */
@@ -384,4 +396,45 @@ body {
     background: radial-gradient(circle at center, #0c1033 0%, #050515 100%);
     pointer-events: none;
     /* Permite que se pueda hacer click en las tarjetas sin problema */
+}
+
+/* ==========================================================================
+   ESTILOS PARA DÍAS HITOS (ESPECIALES)
+   ========================================================================== */
+.timeline-item.unlocked.especial .card {
+    border: 2px solid #f3e5ab;
+    background: linear-gradient(135deg, rgba(26, 16, 60, 0.6), rgba(138, 43, 226, 0.2));
+    box-shadow: 0 0 25px rgba(243, 229, 171, 0.3);
+    animation: pulseEspecial 3s infinite alternate;
+}
+
+.timeline-item.unlocked.especial .star-node {
+    color: #ffffff;
+    font-size: 2rem;
+    text-shadow: 0 0 20px #f3e5ab, 0 0 40px #fff;
+}
+
+.timeline-item.unlocked.especial .day-number {
+    color: #f3e5ab;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(243, 229, 171, 0.5);
+}
+
+.timeline-item.unlocked.especial .btn-open {
+    background: linear-gradient(135deg, #fff, #f3e5ab);
+    box-shadow: 0 0 10px #f3e5ab;
+    transform: scale(1.05);
+}
+
+/* Animación de brillo místico para los días de regalos */
+@keyframes pulseEspecial {
+    0% {
+        box-shadow: 0 0 20px rgba(243, 229, 171, 0.2);
+        border-color: rgba(243, 229, 171, 0.5);
+    }
+
+    100% {
+        box-shadow: 0 0 35px rgba(243, 229, 171, 0.5);
+        border-color: rgba(255, 255, 255, 0.9);
+    }
 }
