@@ -123,40 +123,71 @@ const contenidoDias = {
         texto: `
         Si existe alguna banda que compartimos como gusto es Morat, por ello decidí
         escoger la canción con la cual siento que nuestra historia de amor está
-        creciento. Dale click a la guitarra mi vida <a href="https://www.youtube.com/watch?v=J9olJIUWKOs" target="_blank" class="modal-link">🎸</a>.
+        creciento. Dale click a la guitarra mi vida <a href="https://drive.google.com/file/d/1HjQL2K8ilX6rLyLlxFYa3zbZVDpZgQKW/view?usp=drivesdk" target="_blank" class="modal-link">🎸</a>.
         `,
         esEspecial: true
     },
     11: {
-        titulo: "",
-        pista: "",
-        texto: ``
+        titulo: "El destello",
+        pista: "El brillar de tus ojos en el crepúsculo",
+        texto: `
+        Desde que nos conocimos siempre mantuviste la misma emoción al percatarte por
+        los colores de la tarde al llegar el crepúsculo. Uno de los detalles que más me
+        cautivaron fue este y he de reconocer que amo la forma en que te fijas directamente
+        en los distintivos naranja, amarillo y azul que lo conforman. Como si en el vasto
+        firmamento del cielo buscaras un lugar al que realmente perteneces, un lugar
+        donde podrás gozar de la tranquilidad que mereces, del amor que mereces.
+        `
     },
     12: {
-        titulo: "",
-        pista: "",
-        texto: ``
+        titulo: "La musicalidad",
+        pista: "El sonido de tu risa al llegar",
+        texto: `
+        Si algo Alisson se dió cuenta en una hora de conocerte fue la alegría que te caracteriza.
+        Una alegría que siempre se nota y que la noté desde que te conocí. Tu sonrisa que se forma
+        al momento de hablar y la risa que tienes cuando hablas cautiva e ilumina mi ser.
+        He de confesar que nunca me cansaré de esa forma tuya que tienes para hacerte notar e
+        , inigualablemente, la forma en que me haces sentir.
+        `
     },
     13: {
-        titulo: "",
-        pista: "",
-        texto: ``
+        titulo: "Decidida",
+        pista: "¿Cómo logras actuar de esa manera?",
+        texto: `
+        Si hay algo que siempre me sorprenderá fue como esperaste acampando por Morat y esto solo
+        demostró lo decidida que eres para actuar. Tienes una gran independencia para tomar tus decisiones
+        aunque tú no lo notes. Sabes a lo que vas y lo haces cuando tienes que. Afrontas lo que se te
+        pone delante sin importar las adversidades. Mi reina, aunque hayan dificultades y se te note
+        devastada, siempre te has mantenido de pie. Amaré siempre como eres mi vida.
+        `
     },
     14: {
-        titulo: "",
-        pista: "",
-        texto: ``
+        titulo: "Tu sensibilidad",
+        pista: "El superpoder de sentir más de lo que uno puede",
+        texto: `
+        ¿Cómo puede alguien empatizar tanto con algo ficticio? Me sorprendió saber que llorabas al ver algún
+        kdrama, puesto que, si estos pueden ser diseñados para emocionar, tú lo haces más de lo que alguien podría.
+        Me encanta como eres capaz de sentir con más profundidad cosas que normalmente me son más externas.
+        No únicamente en este caso, porque, la forma en que sientes la música que escuchas también es maravillosa.
+        Como cierras tus ojos y abres tus pulmones para sacar todo aquello que tienes dentro en los versos de
+        una canción. Tu forma de sentir siempre la amaré mi reina.
+        `
     },
     15: {
-        titulo: "",
-        pista: "",
-        texto: ``,
+        titulo: "Nueva sorpresa",
+        pista: "¿Te gustaría recibir algo nuevo?",
+        texto: `
+        Este te lo tengo pendiente mi vida. Veamonos para que pueda entregártelo y, aunque pequeño es, espero de 
+        corazón que lo aprecies, puesto que en esto va parte de mi corazón.
+        `,
         esEspecial: true
     },
     16: {
         titulo: "",
         pista: "",
-        texto: ``
+        texto: `
+        <div class="qr-container"><img src="songs/song1.png" alt="QR Spotify"></div>
+        `
     },
     17: {
         titulo: "",
