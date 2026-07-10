@@ -123,7 +123,7 @@ const contenidoDias = {
         texto: `
         Si existe alguna banda que compartimos como gusto es Morat, por ello decidí
         escoger la canción con la cual siento que nuestra historia de amor está
-        creciento. Dale click a la guitarra mi vida <a href="https://drive.google.com/file/d/1HjQL2K8ilX6rLyLlxFYa3zbZVDpZgQKW/view?usp=drivesdk" target="_blank" class="modal-link">🎸</a>.
+        creciento. Dale click a la guitarra mi vida <a href="https://drive.google.com/file/d/11kGU4RwyLK2tJ4LMNALekJ6g4eHT9cV3/view?usp=sharing" target="_blank" class="modal-link">🎸</a>.
         `,
         esEspecial: true
     },
