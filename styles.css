@@ -449,19 +449,13 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
-    padding: 15px;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
-    border: 1px solid rgba(243, 229, 171, 0.2);
 }
 
 /* Estilo de la imagen del QR */
 .qr-container img {
-    border: 6px solid #ffffff;
-    /* Marco blanco clásico para que los lectores de QR no fallen */
+    width: 300px;
+    height: auto;
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(243, 229, 171, 0.3);
     transition: transform 0.3s ease;
     cursor: pointer;
 }
@@ -472,8 +466,8 @@ body {
 
 /* Texto debajo del QR */
 .qr-container p {
-    margin-top: 10px;
-    font-size: 0.85rem;
+    margin-bottom: 12px;
+    font-size: 0.90rem;
     color: #f3e5ab;
     text-align: center;
     font-style: italic;

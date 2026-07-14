@@ -183,26 +183,53 @@ const contenidoDias = {
         esEspecial: true
     },
     16: {
-        titulo: "",
-        pista: "",
+        titulo: "¿Bailamos?",
+        pista: "Las primeras veces...",
         texto: `
-        <div class="qr-container"><img src="songs/song1.png" alt="QR Spotify"></div>
+        <div class="qr-container">
+        <p>En mi memoria queda el recuerdo de esa vez en la terraza cuando por capricho mío te hice
+        levantarte desnuda de la cama y bailar una canción que a mí me encanta. Hoy te vuelvo a traer
+        la misma, porque, tengo que confesar que mi sueño es bailar esta canción contigo en nuestra
+        boda, ya sea durante el festejo o entregados totalmente el uno al otro durante esa noche mágica.
+        Busca la letra si puedes mi amor, te adoro.</p>
+        <img src="songs/cheek_to_cheek.jpeg" alt="QR Spotify">
+        </div>
         `
     },
     17: {
-        titulo: "",
-        pista: "",
-        texto: ``
+        titulo: "La magia",
+        pista: "Una nueva dedicatoria",
+        texto: `
+        <div class="qr-container">
+        <p>Si existe algo que me encanta tanto como tú es el rock y hoy quiero dedicarte
+        una canción que significa mucho para mí. Un deleite es escucharla en vivo, no obstante,
+        más deleite será cantarla a tu lado. Un deleite en mi vida será despertar contigo
+        y besarte al empezar la mañana. Saber que juntos podemos lograr lo que sea de la
+        mano y apoyo del otro, porque, si esta vida es un sueño, solo sé que a tu lado quiero
+        despertar.</p>
+        <img src="songs/talisman.jpeg" alt="QR Spotify">
+        </div>
+        `
     },
     18: {
         titulo: "",
         pista: "",
-        texto: ``
+        texto: `
+        <div class="qr-container">
+        <p></p>
+        <img src="songs/wonderful_tonigth.jpeg" alt="QR Spotify">
+        </div>
+        `
     },
     19: {
         titulo: "",
         pista: "",
-        texto: ``
+        texto: `
+        <div class="qr-container">
+        <p></p>
+        <img src="songs/morfina.jpeg" alt="QR Spotify">
+        </div>
+        `
     },
     20: {
         titulo: "",
