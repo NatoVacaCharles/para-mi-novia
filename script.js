@@ -212,21 +212,28 @@ const contenidoDias = {
         `
     },
     18: {
-        titulo: "",
-        pista: "",
+        titulo: "Para el futuro",
+        pista: "Aún falta tiempo reina...",
         texto: `
         <div class="qr-container">
-        <p></p>
+        <p>Simplemente necesito que conozcas esta canción, porque, es una de esas que desde la
+        primera vez que la escuche supe que la pondría en uno de los días más especiales de mi vida.
+        Desde hoy quiero que sepas una de esas que estarán de fondo mientras con ojos de amor
+        puedo visualizar a mi tremanda mujer. Una mujer que amo desde hace un tiempo y lo seguiré haciendo.</p>
         <img src="songs/wonderful_tonigth.jpeg" alt="QR Spotify">
         </div>
         `
     },
     19: {
-        titulo: "",
-        pista: "",
+        titulo: "Dueña del cielo",
+        pista: "Tú, mi pedazo de cielo",
         texto: `
         <div class="qr-container">
-        <p></p>
+        <p>Si bien esta no es una dedicación (porque la canción es tuya), quería hacer hincapié en lo
+        importante que eres para mí. Tú me enseñaste esta canción y siempre te recordaré en mi mente
+        por esto, cuando escuche minimamente el inicio de esta canción vendrás tú a mi cabeza y a mi corazón.
+        Gracias por tanto mi vida, además, quería que también escuches algo que te guste y no me guste
+        únicamente a mí.</p>
         <img src="songs/morfina.jpeg" alt="QR Spotify">
         </div>
         `
