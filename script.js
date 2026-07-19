@@ -239,10 +239,14 @@ const contenidoDias = {
         `
     },
     20: {
-        titulo: "",
-        pista: "",
-        texto: ``,
-        esEspecial: true
+        titulo: "Una última vez",
+        pista: "Empezando la cuenta regresiva...",
+        texto: `
+        <div class="qr-container">
+        <p></p>
+        <img src="songs/gardenias.jpeg" alt="QR Spotify">
+        </div>
+        `,
     },
     21: {
         titulo: "",
