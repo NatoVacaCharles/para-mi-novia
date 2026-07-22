@@ -8,7 +8,7 @@ const FECHA_CUMPLEANOS = new Date(2026, 7, 2); // 2 de Agosto de 2026
 const contenidoDias = {
     1: {
         titulo: "El inicio del viaje",
-        pista: "¿Dónde comenzó todo?",
+        pista: "¿Dónde comenzó todo? 🏞️",
         texto: `
         Si el destino fue quien quizo que estemos juntos pues
         definitivamente fue el día que puse, sin saber que te
@@ -19,7 +19,7 @@ const contenidoDias = {
     },
     2: {
         titulo: "Una primera mirada",
-        pista: "¿Recuerdas cuando fue la primera vez que nos miramos a los ojos?",
+        pista: "¿Recuerdas cuando fue la primera vez que nos miramos a los ojos? 👀",
         texto: `
         Recuerdo un día que te acercaste directamente a Alicia,
         simplemente voltee discretamente para saber quien se
@@ -30,7 +30,7 @@ const contenidoDias = {
     },
     3: {
         titulo: "¿Primer acercamiento?",
-        pista: "Apenas y un hola...",
+        pista: "Apenas y un hola... 😁",
         texto: `
         No negaré que cuando me mandaron a ese cuarto no te
         dirigía ni la palabra y simplemente era porque siempre
@@ -54,7 +54,7 @@ const contenidoDias = {
     },
     5: {
         titulo: "Caminos por conectar",
-        pista: "Tener la misma ruta fue determinante",
+        pista: "Tener la misma ruta fue determinante 🛤️",
         texto: `
         Rápidamente fue una costumbre innata, como si así debía de ser y
         así se quedó. Paso a paso, palabra por palabra, risa por risa.
@@ -65,7 +65,7 @@ const contenidoDias = {
     },
     6: {
         titulo: "Un rayo de conexión",
-        pista: "Entre el miedo y los nervios",
+        pista: "Entre el miedo y los nervios ⛈️",
         texto: `
         No sé como hubiera surgido un primer acercamiento nuestro si no
         hubiera sido por ese estruendo nocturno. La excusa perfecta había
@@ -76,7 +76,7 @@ const contenidoDias = {
     },
     7: {
         titulo: "Lluvia constante",
-        pista: "Como dos gotas se juntan",
+        pista: "Como dos gotas se juntan 💧💧",
         texto: `
         Bien dijo Marco Aurelio Denegri que al buscar una pareja es importante
         que sepa conversar. Cada salida que siempre tuvimos mientras caminabamos
@@ -89,7 +89,7 @@ const contenidoDias = {
     },
     8: {
         titulo: "En el campo",
-        pista: "Cabalgando entre la tarde",
+        pista: "Cabalgando entre la tarde 🐎",
         texto: `
         Si algo trajiste a mi vida fue vivir todo aquello que no pensaba, tu
         manera de arriesgarte a actuar me llevó a seguir tu corriente. Pase la
@@ -104,7 +104,7 @@ const contenidoDias = {
     },
     9: {
         titulo: "La brisa de la tarde",
-        pista: "Los momentos especiales se crean",
+        pista: "Los momentos especiales se crean 🍃",
         texto: `
         Un lugar al que nunca había entrado, pero, uno al que tú ya habías ido. La
         confianza aún se iba generando y la unión más creciente se notaba. Siempre
@@ -119,7 +119,7 @@ const contenidoDias = {
     },
     10: {
         titulo: "Nuevo regalo",
-        pista: "Buen momento para agarrar la guitarra...",
+        pista: "Buen momento para agarrar la guitarra... 🎸",
         texto: `
         Si existe alguna banda que compartimos como gusto es Morat, por ello decidí
         escoger la canción con la cual siento que nuestra historia de amor está
@@ -129,7 +129,7 @@ const contenidoDias = {
     },
     11: {
         titulo: "El destello",
-        pista: "El brillar de tus ojos en el crepúsculo",
+        pista: "El brillar de tus ojos en el crepúsculo ✨",
         texto: `
         Desde que nos conocimos siempre mantuviste la misma emoción al percatarte por
         los colores de la tarde al llegar el crepúsculo. Uno de los detalles que más me
@@ -141,7 +141,7 @@ const contenidoDias = {
     },
     12: {
         titulo: "La musicalidad",
-        pista: "El sonido de tu risa al llegar",
+        pista: "El sonido de tu risa al llegar 🎶",
         texto: `
         Si algo Alisson se dió cuenta en una hora de conocerte fue la alegría que te caracteriza.
         Una alegría que siempre se nota y que la noté desde que te conocí. Tu sonrisa que se forma
@@ -152,7 +152,7 @@ const contenidoDias = {
     },
     13: {
         titulo: "Decidida",
-        pista: "¿Cómo logras actuar de esa manera?",
+        pista: "¿Cómo logras actuar de esa manera? 😼",
         texto: `
         Si hay algo que siempre me sorprenderá fue como esperaste acampando por Morat y esto solo
         demostró lo decidida que eres para actuar. Tienes una gran independencia para tomar tus decisiones
@@ -163,7 +163,7 @@ const contenidoDias = {
     },
     14: {
         titulo: "Tu sensibilidad",
-        pista: "El superpoder de sentir más de lo que uno puede",
+        pista: "El superpoder de sentir más de lo que uno puede 😽",
         texto: `
         ¿Cómo puede alguien empatizar tanto con algo ficticio? Me sorprendió saber que llorabas al ver algún
         kdrama, puesto que, si estos pueden ser diseñados para emocionar, tú lo haces más de lo que alguien podría.
@@ -175,7 +175,7 @@ const contenidoDias = {
     },
     15: {
         titulo: "Nueva sorpresa",
-        pista: "¿Te gustaría recibir algo nuevo?",
+        pista: "¿Te gustaría recibir algo nuevo? 💌",
         texto: `
         Este te lo tengo pendiente mi vida. Veamonos para que pueda entregártelo y, aunque pequeño es, espero de 
         corazón que lo aprecies, puesto que en esto va parte de mi corazón.
@@ -184,7 +184,7 @@ const contenidoDias = {
     },
     16: {
         titulo: "¿Bailamos?",
-        pista: "Las primeras veces...",
+        pista: "Las primeras veces... ❤️",
         texto: `
         <div class="qr-container">
         <p>En mi memoria queda el recuerdo de esa vez en la terraza cuando por capricho mío te hice
@@ -198,7 +198,7 @@ const contenidoDias = {
     },
     17: {
         titulo: "La magia",
-        pista: "Una nueva dedicatoria",
+        pista: "Una nueva dedicatoria 💎",
         texto: `
         <div class="qr-container">
         <p>Si existe algo que me encanta tanto como tú es el rock y hoy quiero dedicarte
@@ -213,7 +213,7 @@ const contenidoDias = {
     },
     18: {
         titulo: "Para el futuro",
-        pista: "Aún falta tiempo reina...",
+        pista: "Aún falta tiempo reina... 👰‍♀️",
         texto: `
         <div class="qr-container">
         <p>Simplemente necesito que conozcas esta canción, porque, es una de esas que desde la
@@ -226,7 +226,7 @@ const contenidoDias = {
     },
     19: {
         titulo: "Dueña del cielo",
-        pista: "Tú, mi pedazo de cielo",
+        pista: "Tú, mi pedazo de cielo 🌎",
         texto: `
         <div class="qr-container">
         <p>Si bien esta no es una dedicación (porque la canción es tuya), quería hacer hincapié en lo
@@ -240,7 +240,7 @@ const contenidoDias = {
     },
     20: {
         titulo: "Una última vez",
-        pista: "Empezando la cuenta regresiva...",
+        pista: "Empezando la cuenta regresiva... 🪻",
         texto: `
         <div class="qr-container">
         <p></p>
@@ -249,56 +249,81 @@ const contenidoDias = {
         `,
     },
     21: {
-        titulo: "",
-        pista: "",
-        texto: ``
+        titulo: "10 días...",
+        pista: "Los primeros ladrillos 🏡",
+        texto: `
+        Las casas se construyen con cimientos sólidos para evitar que cada sismo acabe con lo construido
+        y evite desastres. Juntos estamos estableciendo cimientos fuertes, tales que resistan cada sismo,
+        cada tormenta, cada huracán. Tu forma de ser me ha cautivado en tantos aspectos que me es insuficiente
+        nombrarlos en notas tan cortas. No me importan los retos que nos puede poner la vida, porque, si de algo
+        estoy tan seguro (a parte de morir) es que todo lo podremos si estamos juntos, puesto que tu apoyo
+        incondicional es todo lo que necesito encontrar.
+        `
     },
     22: {
-        titulo: "",
-        pista: "",
-        texto: ``
+        titulo: "9 días...",
+        pista: "Nuevos caminos ✈️",
+        texto: `
+        ¿Qué sería de la vida si no se tienen sueños? Pues nada de emocionante ha de ser si eso pasara, pero,
+        seguramente es hermoso si esos sueños son compartidos y mas hermoso aún si es contigo. Reina, si
+        tuviera el mapa del mundo en mis manos y posibles destinos por recorrer, cada uno de estos los recorrería contigo.
+        No quiero solamente convivir contigo, sino vivir contigo. Vivir cada puesta de sol admirando tu cara al
+        empezar la mañana, vivir cada desayuno conversando de cómo nos irá en el día, vivir cada salida con el corazón
+        latiendo insaciablementa para sentir más minutos a tu lado. Si bien para todo esto falta mucho tiempo,
+        es importante vivir nuestros días como si no hubiera un mañana, pues no hay problema más grande que el amor
+        que nos tenemos.
+        `
     },
     23: {
-        titulo: "",
-        pista: "",
-        texto: ``
+        titulo: "8 días...",
+        pista: "Proyectos propios 📍",
+        texto: `
+        El hombre nació solo y morirá solo. La única persona en este mundo por la que deberías de preocuparte más es por tí,
+        porque, solo tú realmente sabes lo que sufres, solo tú realmente sabes lo que te atormenta, solo tú realmente
+        abrazarás tus logros cuando los consigas. Nunca te olvides de ponerte el podio de tu vida, ya que en la grada de
+        espectadores estaré alentado cada decisión que tomes; detrás de todo el bullicio de la gente, estaré para
+        consolarte, apoyarte e incitandote a dar lo mejor de tí. Tus logros son enteramente tuyos mi reina y, completamente
+        feliz estaré, si logras todo aquello que te propongas. En las buenas, en las malas, en las excelentes y en las peores.
+        Te amo mi vida.
+        `
     },
     24: {
-        titulo: "",
+        titulo: "7 días...",
         pista: "",
-        texto: ``
+        texto: `
+        
+        `
     },
     25: {
-        titulo: "",
+        titulo: "6 días...",
         pista: "",
         texto: ``,
         esEspecial: true
     },
     26: {
-        titulo: "",
+        titulo: "5 días...",
         pista: "",
         texto: ``
     },
     27: {
-        titulo: "",
+        titulo: "4 días...",
         pista: "",
         texto: ``
     },
     28: {
-        titulo: "",
+        titulo: "3 días...",
         pista: "",
         texto: ``
     },
     29: {
-        titulo: "",
+        titulo: "2 días...",
         pista: "",
         texto: ``
     },
     30: {
-        titulo: "",
+        titulo: "1 día...",
         pista: "",
         texto: ``,
-        esEspecial: true
     },
 };
 
