@@ -289,9 +289,13 @@ const contenidoDias = {
     },
     24: {
         titulo: "7 días...",
-        pista: "",
+        pista: "Evolución constante ⏳",
         texto: `
-        
+        Todo cambia constantemente, las personas envejecen, sus actitudes cambian, el clima lo hace, absolutamente todo. El
+        amor se da de la misma manera. Hoy no te amo de la misma forma en que te amaba cuando empezó todo, se convirtió en un amor
+        más comprensivo y maduro al entender mejor como eres, con tus días brillantes y grises. No cabe lugar en mí
+        cuando la emoción desborda la idea de mantener una vida contigo. Sé que cambiaremos, que no seremos los mismos que
+        hoy somos, pero, si algo constante quiero en nuestras vidas, es el amor que nos tenemos.
         `
     },
     25: {
