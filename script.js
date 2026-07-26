@@ -300,34 +300,69 @@ const contenidoDias = {
     },
     25: {
         titulo: "6 días...",
-        pista: "",
-        texto: ``,
+        pista: "Un paréntesis para los dos 🎟️",
+        texto: `
+        Importante también es disfrutar del día a día, contemplar la esencia misma de vivir. Dejemos de pensar en el futuro por un
+        momento, pues, la única certeza que se tiene de este es que es incierto. Te debo un picnic mi reina y te lo daré. Sin embargo,
+        esta semana no podrá darse, pero conseguiré el dinero para que podamos pasar una buena tarde mi vida. Tú, yo y el amor
+        que nos tenemos. Quedo en deuda contigo.
+        `,
         esEspecial: true
     },
     26: {
         titulo: "5 días...",
-        pista: "",
-        texto: ``
+        pista: "El refugio en la tormenta 🌫️",
+        texto: `
+        En estos últimos días quisiera concentrarme en darte las gracias. Hoy quiero agradecerte por ser ese refugio acogedor,
+        caliente, amoroso y comprensivo que eres. Dentro de un mundo lleno de exigencias y malos momentos, solo tú eres
+        ese lugar que me permite descansar y encontrar paz dentro del caos. Gracias por la forma en que me has demostrado
+        tu amor en esa delicadeza con la que me acaricias, en esa ternura con la que me miras. Gracias a tí entiendo que la
+        verdadera fortaleza también radica en saber pausar, descansar y dejarse cuidar.
+        `
     },
     27: {
         titulo: "4 días...",
-        pista: "",
-        texto: ``
+        pista: "Siempre se aprende 🌻",
+        texto: `
+        <i>"Dime con quien andas y te diré quien eres"</i>. Hay que reconocer que poco a poco te vas moldeando de quienes
+        mantienes a tu alrededor y, tomando esto en cuenta, tú dejarás huella en mi, huella que cargaré con orgullo. Gracias
+        por hacerme mejor persona mirando diferentes perspectivas y comprendiendo más a detalle tu sentir. Diariamente me inspiras
+        a ser más humano, puesto que contigo he encontrado donde puedo soltarme libremente y dejar brotar cosas que con
+        nadie más soy capaz de hacer.
+        `
     },
     28: {
         titulo: "3 días...",
-        pista: "",
-        texto: ``
+        pista: "Tu autenticidad 🌸",
+        texto: `
+        La belleza de cada persona se encuentra en la confianza construida puesto que en esta se muestran tal y como son.
+        Sin embargo, tú depositaste confianza en mí en poco tiempo de habernos conocido. A día de hoy me sigue pareciendo
+        sorprendente la forma en que te abriste y tomaste el riesgo de mostrarte vulnerable para saber si yo era capaz de
+        manejarlo. Hoy te agradezo por tu valentía, la valentía de mostrarte auténticamente a mí con todo el paquete completo.
+        Me has enseñado que el regalo más apreciado en una relación es la libertad de ser uno mismo sin el temor de ser juzgado.
+        Gracias por regalarme la confianza de tu vulnerabilidad y por conocer el tesoro de tu esencia más real.
+        `
     },
     29: {
         titulo: "2 días...",
-        pista: "",
-        texto: ``
+        pista: "A vísperas 🌄",
+        texto: `
+        A pocos días de terminar este recorrido he tratado diariamente que notes la profunda muestra de agradecimiento
+        que siento por tu existencia. Sí, el mero hecho de que existas es digno de agradecimiento y es inprescindible
+        agradecerle a Dios por ello. Gracias por dejarme ser parte de tu vida, que nuestros caminos se conecten para
+        permitirnos vivir juntos el corto camino que es la vida. Gracias por el privilegio de caminar juntos y enseñarme a
+        amar realmente. Gracias por todo mi amor, te adoro.
+        `
     },
     30: {
         titulo: "1 día...",
-        pista: "",
-        texto: ``,
+        pista: "Casi llegamos 🫶",
+        texto: `
+        Ya casi hemos terminado. De corazón espero que en el transcurso del día este haya sido un espacio de felicidad
+        donde encontraste diariamente un bello recado, una bella canción o un bello gesto de agradecimiento. El día que
+        vayas a vivir mañana será especial, porque, es el día que nació una de las personas más importantes de mi vida.
+        Siempre se la persona que eres mi vida y espero haber capturado tu esencia en estos escritos. <i>Te ama, Renato.</i>
+        `
     },
 };
 
