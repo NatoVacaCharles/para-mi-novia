@@ -474,7 +474,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const diasTranscurridos = Math.floor(diferenciaTiempo / (1000 * 60 * 60 * 24)) + 1;
 
     // Generar los 30 días automáticamente
-    for (let i = 1; i <= 30; i++) {
+    for (let i = 1; i <= 31; i++) {
         const item = document.createElement("div");
         const lado = (i % 2 !== 0) ? "left" : "right";
         item.classList.add("timeline-item", lado);
