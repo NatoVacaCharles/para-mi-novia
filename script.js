@@ -359,11 +359,22 @@ const contenidoDias = {
         pista: "Casi llegamos 🫶",
         texto: `
         Ya casi hemos terminado. De corazón espero que en el transcurso del día este haya sido un espacio de felicidad
-        donde encontraste diariamente un bello recado, una bella canción o un bello gesto de agradecimiento. El día que
-        vayas a vivir mañana será especial, porque, es el día que nació una de las personas más importantes de mi vida.
+        donde encontraste diariamente un bello recado, una bella canción o un bello gesto de agradecimiento. Dentro de poco
+        vivirás un día muy especial, porque, es el día que nació una de las personas más importantes de mi vida.
         Siempre se la persona que eres mi vida y espero haber capturado tu esencia en estos escritos. <i>Te ama, Renato.</i>
         `
     },
+    31: {
+        título: "Horas...",
+        pista: "Esperando a las 2 de la madrugada ⏳",
+        texto: `
+        Ahora solo contamos las horas para que al fín llegue el día que tanto hemos estado esperando. Dentro de unas pocas
+        horas tendrás un 2 en tu edad durante los siguientes 10 años. Durante tu vida has recorrido un sendero rocoso, puesto
+        que se ha llenado de partes difíciles de pasar, pero, aún así estás acá. Cada momento, cada instante, cada decisión te
+        han traído a esta parte de tu vida. Asegúrate de que en adelante cada paso sea firme y decidido. No importan las
+        circunstancias de la vida, tú siempre ten la frente en alto y demostrando la gran mujer que eres.
+        `
+    }
 };
 
 // ==========================================
