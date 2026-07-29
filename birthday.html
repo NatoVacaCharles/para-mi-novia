@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="heart.png" type="image/x-icon">
+    <title>¡Feliz Cumpleaños Mi Reina! 🎉</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0b0719;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #constellationCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .hero-container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(26, 16, 60, 0.4);
+            border: 1px solid rgba(243, 229, 171, 0.3);
+            border-radius: 20px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 0 50px rgba(243, 229, 171, 0.2);
+            max-width: 90%;
+            width: 650px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #f3e5ab;
+            text-shadow: 0 0 20px rgba(243, 229, 171, 0.8), 0 0 40px #fff;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #e2e4f0;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .btn-back {
+            display: inline-block;
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #f3e5ab;
+            border: 1px solid #f3e5ab;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-back:hover {
+            background: #f3e5ab;
+            color: #1a103c;
+            box-shadow: 0 0 15px #f3e5ab;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.1rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Fondo de Constelaciones -->
+    <canvas id="constellationCanvas"></canvas>
+
+    <!-- Mensaje Central -->
+    <div class="hero-container">
+        <h1>¡FELIZ CUMPLEAÑOS MI REINA! 👑✨</h1>
+        <p>
+            Hoy, alegremente, festejamos un año más tuyo. Llegaste a los 20.<br>
+            Espera a que llegue a darte tu regalo mi amor. Aunque no sea mucho<br>
+            espero que te guste puesto que le he puesto mucho cariño.<br>
+            Gracias por existir.<br><br>
+            <strong>¡Te amo infinitamente mi vida! ❤️</strong>
+        </p>
+        <a href="index.html" class="btn-back">← Volver al mapa</a>
+    </div>
+
+    <!-- Script del Canvas Animado -->
+    <script src="script.js" defer></script>
+</body>
+
+</html>

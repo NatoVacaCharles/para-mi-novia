@@ -501,7 +501,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 item.querySelector(".day-number").innerText = `Día ${i.toString().padStart(2, '0')}`;
                 item.querySelector("p").innerText = datosDia.pista; 
             }
-
         } else {
             item.classList.add("locked");
             item.innerHTML = `
@@ -574,3 +573,44 @@ function actualizarCountdown() {
 
 actualizarCountdown();
 setInterval(actualizarCountdown, 1000);
+
+// ==========================================
+// 5. MODAL FINAL DE CUMPLEAÑOS
+// ==========================================
+
+document.addEventListener("DOMContentLoaded", () => {
+    const hoy = new Date();
+    hoy.setHours(0, 0, 0, 0);
+
+    const fechaCumple = new Date(FECHA_CUMPLEANOS);
+    fechaCumple.setHours(0, 0, 0, 0);
+
+    const finalGiftSection = document.querySelector(".final-gift-section");
+
+    if (finalGiftSection) {
+        if (hoy.getTime() >= fechaCumple.getTime()) {
+            finalGiftSection.classList.remove("locked");
+            finalGiftSection.classList.add("unlocked");
+            
+            finalGiftSection.innerHTML = `
+                <button id="btn-final-gift" onclick="redireccionarPaginaCumpleaños()">
+                    🎁
+                </button>
+            `;
+        } else {
+            finalGiftSection.classList.remove("unlocked");
+            finalGiftSection.classList.add("locked");
+            
+            finalGiftSection.innerHTML = `
+                <button id="btn-final-gift" class="btn-disabled" disabled>
+                    🔒
+                </button>
+            `;
+        }
+    }
+});
+
+// Función de redirección para abrir la página del cumpleaños
+function redireccionarPaginaCumpleaños() {
+    window.location.href = "birthday.html"; 
+}
