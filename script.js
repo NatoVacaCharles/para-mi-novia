@@ -365,7 +365,7 @@ const contenidoDias = {
         `
     },
     31: {
-        título: "Horas...",
+        titulo: "Horas...",
         pista: "Esperando a las 2 de la madrugada ⏳",
         texto: `
         Ahora solo contamos las horas para que al fín llegue el día que tanto hemos estado esperando. Dentro de poco
