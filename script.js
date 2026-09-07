@@ -366,13 +366,14 @@ const contenidoDias = {
     },
     31: {
         titulo: "Horas...",
-        pista: "Esperando a las 2 de la madrugada ⏳",
+        pista: "Esperando a las 8 de la mañana ⏳",
         texto: `
         Ahora solo contamos las horas para que al fín llegue el día que tanto hemos estado esperando. Dentro de poco
         tendrás un 2 en tu edad durante los siguientes 10 años. Durante tu vida has recorrido un sendero rocoso, puesto
         que se ha llenado de partes difíciles de pasar, pero, aún así estás acá. Cada momento, cada instante, cada decisión te
         han traído a esta parte de tu vida. Asegúrate de que en adelante cada paso sea firme y decidido. No importan las
-        circunstancias de la vida, tú siempre ten la frente en alto y demostrando la gran mujer que eres.
+        circunstancias de la vida, tú siempre ten la frente en alto y demostrando la gran mujer que eres. Tuve que actualizar
+        la información, porque tu mami dijo que habías nacido, curiosamente, a la misma hora que yo.
         `
     }
 };
