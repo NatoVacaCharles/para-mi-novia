@@ -1,0 +1,374 @@
+// Escritos de tus días
+const contenidoDias = {
+  1: {
+    titulo: "El inicio del viaje",
+    pista: "¿Dónde comenzó todo? 🏞️",
+    texto: `
+        Si el destino fue quien quizo que estemos juntos pues
+        definitivamente fue el día que puse, sin saber que te
+        encontraría, un pie en esa oficiona. Si algo tengo
+        guardado en mi memoria es la forma en que tu risa se
+        entrometía en la voz de la gente en la llamada.
+        `,
+  },
+  2: {
+    titulo: "Una primera mirada",
+    pista:
+      "¿Recuerdas cuando fue la primera vez que nos miramos a los ojos? 👀",
+    texto: `
+        Recuerdo un día que te acercaste directamente a Alicia,
+        simplemente voltee discretamente para saber quien se
+        acercaba y ahí te ví. Los ademanes que realizabas y la
+        sonrisa que siempre tuviste se esbozaban en tu ser.
+        Caí, sin todavía saber, en la mirada y actitud de aquella mujer.
+        `,
+  },
+  3: {
+    titulo: "¿Primer acercamiento?",
+    pista: "Apenas y un hola... 😁",
+    texto: `
+        No negaré que cuando me mandaron a ese cuarto no te
+        dirigía ni la palabra y simplemente era porque siempre
+        he sido callado en esos ambientes. Sin embargo, he de admitir
+        que en mi atención si calabas, puesto que por tu forma
+        de ser siempre sabía si es que ahí te encontrabas.
+        `,
+  },
+  4: {
+    titulo: "Caminando juntos",
+    pista: "¿De Goyeneche al cruce? 😅",
+    texto: `
+        Sinceramente por mi cabeza nunca pasó caminar tanto conversando.
+        Yo pensé que simplemente llegaríamos unas cuadras más arriba y
+        tomarías tu carro para irte a tu casa. Sin embargo, desde esa
+        caminata larga y conversación amena, sentí que algo había cambiado.
+        No sé si lo sentiste, pero, inicialmente sentí que si nos ibamos a
+        llevar bien, pero, no pensé que podríamos llegar tan lejos en tan
+        poco tiempo.
+        `,
+  },
+  5: {
+    titulo: "Caminos por conectar",
+    pista: "Tener la misma ruta fue determinante 🛤️",
+    texto: `
+        Rápidamente fue una costumbre innata, como si así debía de ser y
+        así se quedó. Paso a paso, palabra por palabra, risa por risa.
+        Terminar esa jornada laboral se volvió mi parte esperada del día,
+        como si solo esperara que empezara a trabjar para añorar la salida,
+        ya que en esa salida una gran compañía me esperaba.
+        `,
+  },
+  6: {
+    titulo: "Un rayo de conexión",
+    pista: "Entre el miedo y los nervios ⛈️",
+    texto: `
+        No sé como hubiera surgido un primer acercamiento nuestro si no
+        hubiera sido por ese estruendo nocturno. La excusa perfecta había
+        encontrado para sentir por primera vez cómo era tenerte entre mis
+        brazos. Sinceramente, desde ese mismo instante ese deseo de querer
+        estar más contigo fue creciendo gradualmente.
+        `,
+  },
+  7: {
+    titulo: "Lluvia constante",
+    pista: "Como dos gotas se juntan 💧💧",
+    texto: `
+        Bien dijo Marco Aurelio Denegri que al buscar una pareja es importante
+        que sepa conversar. Cada salida que siempre tuvimos mientras caminabamos
+        la comodidad era evidente, la tranquilidad y solvencia nuestra
+        mostraban la conexión latente. Algo importante que considero es que
+        en la estación del año correspondiente siempre fue de mi preferencia 
+        y, dándome cuenta, la mujer que conocí también se convirtió en la persona
+        de mi preferencia.
+        `,
+  },
+  8: {
+    titulo: "En el campo",
+    pista: "Cabalgando entre la tarde 🐎",
+    texto: `
+        Si algo trajiste a mi vida fue vivir todo aquello que no pensaba, tu
+        manera de arriesgarte a actuar me llevó a seguir tu corriente. Pase la
+        tarde con una sola cosa en mente: Tú. ¿Dejar de pensar en tí? Eso ni
+        soñarlo, no podía parar de mirarte e imaginar la probabilidad de que
+        sucediera lo que pasó. Si bien te has dado cuenta de mí es que esas ganas
+        contigo no me las puedo contener y culpo al sonar de las palabras en tu boca,
+        la sinceridad en tu sonrisa, lo dulce de tu mirada y la suavidad de la piel
+        que todavía no había probado. Tus labios. Sentirlos pegados a los míos
+        fue la mejor sensación que pude haber sentido.
+        `,
+  },
+  9: {
+    titulo: "La brisa de la tarde",
+    pista: "Los momentos especiales se crean 🍃",
+    texto: `
+        Un lugar al que nunca había entrado, pero, uno al que tú ya habías ido. La
+        confianza aún se iba generando y la unión más creciente se notaba. Siempre
+        tendré pasmada la forma en que te expresas, cómo demuestras tu gusto, cómo
+        brillas dentro de este mundo. Si Dios me dio los ojos, fueron estos para
+        admirarte; si me dió la boca, fue esta para alabarte; si me dió el alma, fue
+        está para unirla con la tuya. Aunque, molesto por la demora no evitaba
+        la felicidad que tengo al estar contigo. Algo característico siempre vas a
+        tener, puesto que tu afirmación es peculiar. No fue un sí, fue un ya. Un
+        ya te amo, ya te deseo, ya te adoro y ya te anhelo.
+        `,
+  },
+  10: {
+    titulo: "Nuevo regalo",
+    pista: "Buen momento para agarrar la guitarra... 🎸",
+    texto: `
+        Si existe alguna banda que compartimos como gusto es Morat, por ello decidí
+        escoger la canción con la cual siento que nuestra historia de amor está
+        creciento. Dale click a la guitarra mi vida <a href="https://drive.google.com/file/d/11kGU4RwyLK2tJ4LMNALekJ6g4eHT9cV3/view?usp=sharing" target="_blank" class="modal-link">🎸</a>.
+        `,
+    esEspecial: true,
+  },
+  11: {
+    titulo: "El destello",
+    pista: "El brillar de tus ojos en el crepúsculo ✨",
+    texto: `
+        Desde que nos conocimos siempre mantuviste la misma emoción al percatarte por
+        los colores de la tarde al llegar el crepúsculo. Uno de los detalles que más me
+        cautivaron fue este y he de reconocer que amo la forma en que te fijas directamente
+        en los distintivos naranja, amarillo y azul que lo conforman. Como si en el vasto
+        firmamento del cielo buscaras un lugar al que realmente perteneces, un lugar
+        donde podrás gozar de la tranquilidad que mereces, del amor que mereces.
+        `,
+  },
+  12: {
+    titulo: "La musicalidad",
+    pista: "El sonido de tu risa al llegar 🎶",
+    texto: `
+        Si algo Alisson se dió cuenta en una hora de conocerte fue la alegría que te caracteriza.
+        Una alegría que siempre se nota y que la noté desde que te conocí. Tu sonrisa que se forma
+        al momento de hablar y la risa que tienes cuando hablas cautiva e ilumina mi ser.
+        He de confesar que nunca me cansaré de esa forma tuya que tienes para hacerte notar e
+        , inigualablemente, la forma en que me haces sentir.
+        `,
+  },
+  13: {
+    titulo: "Decidida",
+    pista: "¿Cómo logras actuar de esa manera? 😼",
+    texto: `
+        Si hay algo que siempre me sorprenderá fue como esperaste acampando por Morat y esto solo
+        demostró lo decidida que eres para actuar. Tienes una gran independencia para tomar tus decisiones
+        aunque tú no lo notes. Sabes a lo que vas y lo haces cuando tienes que. Afrontas lo que se te
+        pone delante sin importar las adversidades. Mi reina, aunque hayan dificultades y se te note
+        devastada, siempre te has mantenido de pie. Amaré siempre como eres mi vida.
+        `,
+  },
+  14: {
+    titulo: "Tu sensibilidad",
+    pista: "El superpoder de sentir más de lo que uno puede 😽",
+    texto: `
+        ¿Cómo puede alguien empatizar tanto con algo ficticio? Me sorprendió saber que llorabas al ver algún
+        kdrama, puesto que, si estos pueden ser diseñados para emocionar, tú lo haces más de lo que alguien podría.
+        Me encanta como eres capaz de sentir con más profundidad cosas que normalmente me son más externas.
+        No únicamente en este caso, porque, la forma en que sientes la música que escuchas también es maravillosa.
+        Como cierras tus ojos y abres tus pulmones para sacar todo aquello que tienes dentro en los versos de
+        una canción. Tu forma de sentir siempre la amaré mi reina.
+        `,
+  },
+  15: {
+    titulo: "Nueva sorpresa",
+    pista: "¿Te gustaría recibir algo nuevo? 💌",
+    texto: `
+        Este te lo tengo pendiente mi vida. Veamonos para que pueda entregártelo y, aunque pequeño es, espero de 
+        corazón que lo aprecies, puesto que en esto va parte de mi corazón.
+        `,
+    esEspecial: true,
+  },
+  16: {
+    titulo: "¿Bailamos?",
+    pista: "Las primeras veces... ❤️",
+    texto: `
+        <div class="qr-container">
+        <p>En mi memoria queda el recuerdo de esa vez en la terraza cuando por capricho mío te hice
+        levantarte desnuda de la cama y bailar una canción que a mí me encanta. Hoy te vuelvo a traer
+        la misma, porque, tengo que confesar que mi sueño es bailar esta canción contigo en nuestra
+        boda, ya sea durante el festejo o entregados totalmente el uno al otro durante esa noche mágica.
+        Busca la letra si puedes mi amor, te adoro.</p>
+        <img src="songs/cheek_to_cheek.jpeg" alt="QR Spotify">
+        </div>
+        `,
+  },
+  17: {
+    titulo: "La magia",
+    pista: "Una nueva dedicatoria 💎",
+    texto: `
+        <div class="qr-container">
+        <p>Si existe algo que me encanta tanto como tú es el rock y hoy quiero dedicarte
+        una canción que significa mucho para mí. Un deleite es escucharla en vivo, no obstante,
+        más deleite será cantarla a tu lado. Un deleite en mi vida será despertar contigo
+        y besarte al empezar la mañana. Saber que juntos podemos lograr lo que sea de la
+        mano y apoyo del otro, porque, si esta vida es un sueño, solo sé que a tu lado quiero
+        despertar.</p>
+        <img src="songs/talisman.jpeg" alt="QR Spotify">
+        </div>
+        `,
+  },
+  18: {
+    titulo: "Para el futuro",
+    pista: "Aún falta tiempo reina... 👰‍♀️",
+    texto: `
+        <div class="qr-container">
+        <p>Simplemente necesito que conozcas esta canción, porque, es una de esas que desde la
+        primera vez que la escuche supe que la pondría en uno de los días más especiales de mi vida.
+        Desde hoy quiero que sepas una de esas que estarán de fondo mientras con ojos de amor
+        puedo visualizar a mi tremanda mujer. Una mujer que amo desde hace un tiempo y lo seguiré haciendo.</p>
+        <img src="songs/wonderful_tonigth.jpeg" alt="QR Spotify">
+        </div>
+        `,
+  },
+  19: {
+    titulo: "Dueña del cielo",
+    pista: "Tú, mi pedazo de cielo 🌎",
+    texto: `
+        <div class="qr-container">
+        <p>Si bien esta no es una dedicación (porque la canción es tuya), quería hacer hincapié en lo
+        importante que eres para mí. Tú me enseñaste esta canción y siempre te recordaré en mi mente
+        por esto, cuando escuche minimamente el inicio de esta canción vendrás tú a mi cabeza y a mi corazón.
+        Gracias por tanto mi vida, además, quería que también escuches algo que te guste y no me guste
+        únicamente a mí.</p>
+        <img src="songs/morfina.jpeg" alt="QR Spotify">
+        </div>
+        `,
+  },
+  20: {
+    titulo: "Una última vez",
+    pista: "Empezando la cuenta regresiva... 🪻",
+    texto: `
+        <div class="qr-container">
+        <p></p>
+        <img src="songs/gardenias.jpeg" alt="QR Spotify">
+        </div>
+        `,
+  },
+  21: {
+    titulo: "10 días...",
+    pista: "Los primeros ladrillos 🏡",
+    texto: `
+        Las casas se construyen con cimientos sólidos para evitar que cada sismo acabe con lo construido
+        y evite desastres. Juntos estamos estableciendo cimientos fuertes, tales que resistan cada sismo,
+        cada tormenta, cada huracán. Tu forma de ser me ha cautivado en tantos aspectos que me es insuficiente
+        nombrarlos en notas tan cortas. No me importan los retos que nos puede poner la vida, porque, si de algo
+        estoy tan seguro (a parte de morir) es que todo lo podremos si estamos juntos, puesto que tu apoyo
+        incondicional es todo lo que necesito encontrar.
+        `,
+  },
+  22: {
+    titulo: "9 días...",
+    pista: "Nuevos caminos ✈️",
+    texto: `
+        ¿Qué sería de la vida si no se tienen sueños? Pues nada de emocionante ha de ser si eso pasara, pero,
+        seguramente es hermoso si esos sueños son compartidos y mas hermoso aún si es contigo. Reina, si
+        tuviera el mapa del mundo en mis manos y posibles destinos por recorrer, cada uno de estos los recorrería contigo.
+        No quiero solamente convivir contigo, sino vivir contigo. Vivir cada puesta de sol admirando tu cara al
+        empezar la mañana, vivir cada desayuno conversando de cómo nos irá en el día, vivir cada salida con el corazón
+        latiendo insaciablementa para sentir más minutos a tu lado. Si bien para todo esto falta mucho tiempo,
+        es importante vivir nuestros días como si no hubiera un mañana, pues no hay problema más grande que el amor
+        que nos tenemos.
+        `,
+  },
+  23: {
+    titulo: "8 días...",
+    pista: "Proyectos propios 📍",
+    texto: `
+        El hombre nació solo y morirá solo. La única persona en este mundo por la que deberías de preocuparte más es por tí,
+        porque, solo tú realmente sabes lo que sufres, solo tú realmente sabes lo que te atormenta, solo tú realmente
+        abrazarás tus logros cuando los consigas. Nunca te olvides de ponerte el podio de tu vida, ya que en la grada de
+        espectadores estaré alentado cada decisión que tomes; detrás de todo el bullicio de la gente, estaré para
+        consolarte, apoyarte e incitandote a dar lo mejor de tí. Tus logros son enteramente tuyos mi reina y, completamente
+        feliz estaré, si logras todo aquello que te propongas. En las buenas, en las malas, en las excelentes y en las peores.
+        Te amo mi vida.
+        `,
+  },
+  24: {
+    titulo: "7 días...",
+    pista: "Evolución constante ⏳",
+    texto: `
+        Todo cambia constantemente, las personas envejecen, sus actitudes cambian, el clima lo hace, absolutamente todo. El
+        amor se da de la misma manera. Hoy no te amo de la misma forma en que te amaba cuando empezó todo, se convirtió en un amor
+        más comprensivo y maduro al entender mejor como eres, con tus días brillantes y grises. No cabe lugar en mí
+        cuando la emoción desborda la idea de mantener una vida contigo. Sé que cambiaremos, que no seremos los mismos que
+        hoy somos, pero, si algo constante quiero en nuestras vidas, es el amor que nos tenemos.
+        `,
+  },
+  25: {
+    titulo: "6 días...",
+    pista: "Un paréntesis para los dos 🎟️",
+    texto: `
+        Importante también es disfrutar del día a día, contemplar la esencia misma de vivir. Dejemos de pensar en el futuro por un
+        momento, pues, la única certeza que se tiene de este es que es incierto. Te debo un picnic mi reina y te lo daré. Sin embargo,
+        esta semana no podrá darse, pero conseguiré el dinero para que podamos pasar una buena tarde mi vida. Tú, yo y el amor
+        que nos tenemos. Quedo en deuda contigo.
+        `,
+    esEspecial: true,
+  },
+  26: {
+    titulo: "5 días...",
+    pista: "El refugio en la tormenta 🌫️",
+    texto: `
+        En estos últimos días quisiera concentrarme en darte las gracias. Hoy quiero agradecerte por ser ese refugio acogedor,
+        caliente, amoroso y comprensivo que eres. Dentro de un mundo lleno de exigencias y malos momentos, solo tú eres
+        ese lugar que me permite descansar y encontrar paz dentro del caos. Gracias por la forma en que me has demostrado
+        tu amor en esa delicadeza con la que me acaricias, en esa ternura con la que me miras. Gracias a tí entiendo que la
+        verdadera fortaleza también radica en saber pausar, descansar y dejarse cuidar.
+        `,
+  },
+  27: {
+    titulo: "4 días...",
+    pista: "Siempre se aprende 🌻",
+    texto: `
+        <i>"Dime con quien andas y te diré quien eres"</i>. Hay que reconocer que poco a poco te vas moldeando de quienes
+        mantienes a tu alrededor y, tomando esto en cuenta, tú dejarás huella en mi, huella que cargaré con orgullo. Gracias
+        por hacerme mejor persona mirando diferentes perspectivas y comprendiendo más a detalle tu sentir. Diariamente me inspiras
+        a ser más humano, puesto que contigo he encontrado donde puedo soltarme libremente y dejar brotar cosas que con
+        nadie más soy capaz de hacer.
+        `,
+  },
+  28: {
+    titulo: "3 días...",
+    pista: "Tu autenticidad 🌸",
+    texto: `
+        La belleza de cada persona se encuentra en la confianza construida puesto que en esta se muestran tal y como son.
+        Sin embargo, tú depositaste confianza en mí en poco tiempo de habernos conocido. A día de hoy me sigue pareciendo
+        sorprendente la forma en que te abriste y tomaste el riesgo de mostrarte vulnerable para saber si yo era capaz de
+        manejarlo. Hoy te agradezo por tu valentía, la valentía de mostrarte auténticamente a mí con todo el paquete completo.
+        Me has enseñado que el regalo más apreciado en una relación es la libertad de ser uno mismo sin el temor de ser juzgado.
+        Gracias por regalarme la confianza de tu vulnerabilidad y por conocer el tesoro de tu esencia más real.
+        `,
+  },
+  29: {
+    titulo: "2 días...",
+    pista: "A vísperas 🌄",
+    texto: `
+        A pocos días de terminar este recorrido he tratado diariamente que notes la profunda muestra de agradecimiento
+        que siento por tu existencia. Sí, el mero hecho de que existas es digno de agradecimiento y es inprescindible
+        agradecerle a Dios por ello. Gracias por dejarme ser parte de tu vida, que nuestros caminos se conecten para
+        permitirnos vivir juntos el corto camino que es la vida. Gracias por el privilegio de caminar juntos y enseñarme a
+        amar realmente. Gracias por todo mi amor, te adoro.
+        `,
+  },
+  30: {
+    titulo: "1 día...",
+    pista: "Casi llegamos 🫶",
+    texto: `
+        Ya casi hemos terminado. De corazón espero que en el transcurso del día este haya sido un espacio de felicidad
+        donde encontraste diariamente un bello recado, una bella canción o un bello gesto de agradecimiento. Dentro de poco
+        vivirás un día muy especial, porque, es el día que nació una de las personas más importantes de mi vida.
+        Siempre se la persona que eres mi vida y espero haber capturado tu esencia en estos escritos. <i>Te ama, Renato.</i>
+        `,
+  },
+  31: {
+    titulo: "Horas...",
+    pista: "Esperando a las 8 de la mañana ⏳",
+    texto: `
+        Ahora solo contamos las horas para que al fín llegue el día que tanto hemos estado esperando. Dentro de poco
+        tendrás un 2 en tu edad durante los siguientes 10 años. Durante tu vida has recorrido un sendero rocoso, puesto
+        que se ha llenado de partes difíciles de pasar, pero, aún así estás acá. Cada momento, cada instante, cada decisión te
+        han traído a esta parte de tu vida. Asegúrate de que en adelante cada paso sea firme y decidido. No importan las
+        circunstancias de la vida, tú siempre ten la frente en alto y demostrando la gran mujer que eres. Tuve que actualizar
+        la información, porque tu mami dijo que habías nacido, curiosamente, a la misma hora que yo.
+        `,
+  },
+};
