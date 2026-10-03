@@ -4,8 +4,6 @@
 const FECHA_INICIO_RETO = new Date(2026, 6, 2); // 2 de Julio de 2026
 const FECHA_CUMPLEANOS = new Date(2026, 7, 2); // 2 de Agosto de 2026
 
-// DESHABILITACIÓN TEMPORAL DE LA LÍNEA DE CUMPLEAÑOS
-/*
 // ==========================================
 // 3. LOGICA PRINCIPAL (AL CARGAR LA PAGINA)
 // ==========================================
@@ -140,6 +138,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 <button id="btn-final-gift" onclick="redireccionarPaginaCumpleaños()">
                     🎁
                 </button>
+                <button id="btn-final-gift" onclick="redireccionarPaginaEscritos()">
+                    📖
+                </button>
             `;
         } else {
             finalGiftSection.classList.remove("unlocked");
@@ -158,24 +159,6 @@ document.addEventListener("DOMContentLoaded", () => {
 function redireccionarPaginaCumpleaños() {
     window.location.href = "birthday.html"; 
 }
-*/
-
-// ==========================================
-// 6. MODAL DE ESCRITOS
-// ==========================================
-
-document.addEventListener("DOMContentLoaded", () => {
-    const finalGiftSection = document.querySelector(".final-gift-section");
-
-    finalGiftSection.classList.remove("locked");
-    finalGiftSection.classList.add("unlocked");
-
-    finalGiftSection.innerHTML = `
-        <button id="btn-final-gift" onclick="redireccionarPaginaEscritos()">
-            📖
-        </button>
-    `;
-});
 
 // Función de redirección para abrir la página del cumpleaños
 function redireccionarPaginaEscritos() {

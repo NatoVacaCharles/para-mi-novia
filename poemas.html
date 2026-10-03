@@ -1,24 +1,146 @@
 <!DOCTYPE html>
-<html lang="eS">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="heart.png" type="image/x-icon">
-    <title>Escritos, poemas, despechos y entre otras cosas...</title>
-    <link rel="stylesheet" href="styles.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Montserrat:wght@300;400;600&display=swap"
-        rel="stylesheet">
+    <title>Una Última Vez</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0b0719;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-y: auto;
+            position: relative;
+            padding: 40px 0;
+        }
+
+        #constellationCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .hero-container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(26, 16, 60, 0.4);
+            border: 1px solid rgba(243, 229, 171, 0.3);
+            border-radius: 20px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 0 50px rgba(243, 229, 171, 0.2);
+            max-width: 90%;
+            width: 650px;
+            margin: 20px auto;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #f3e5ab;
+            text-shadow: 0 0 20px rgba(243, 229, 171, 0.8), 0 0 40px #fff;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #e2e4f0;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .btn-back {
+            display: inline-block;
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #f3e5ab;
+            border: 1px solid #f3e5ab;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-back:hover {
+            background: #f3e5ab;
+            color: #1a103c;
+            box-shadow: 0 0 15px #f3e5ab;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.1rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
+    <!-- Fondo de Constelaciones -->
     <canvas id="constellationCanvas"></canvas>
-    <div class="stars-container">
-        <div class="stars"></div>
-        <div class="stars2"></div>
+
+    <!-- Mensaje Central -->
+    <div class="hero-container">
+        <h1>Gracias Reina</h1>
+        <p>
+            No sé si algún día vayas a leer o entrar a esta página. Pensé en borrarla en algún momento,
+            sin embargo, fue parte de tu regalo y tú eres libre de hacer con tu regalo lo que desees.
+            Esto lo escribo un día después de ¿la última vez que nos vimos? Solo tú sabrás si fue la última.
+            ¿Sabes? Un dos de abril formalizamos nuestra relación y, casualmente, un dos de octubre, luego de 
+            un mes de ausencia, pude verte otra vez y agradecer a Dios por cada segundo que pase contigo, porque,
+            si ese fue el último, fuí inmensamente feliz en nuestro último día juntos. El último día pude ver a mi reina.
+            Tú eres libre, completamente libre. Mujer de corazón inmeso, inmenso como las estrellas que puedas
+            contar. Gracias por todo, pero, ahora soy parte de tu pasado y debes ver hacia el futuro. Tu futuro.
+            Le pedí, pido a Dios que te cuide cada día de tu vida y te guíe por el camino que debes seguir.
+            Eres todo lo que alguien puede pedir, aunque te sientas menos no lo eres, nunca lo fuiste y,
+            si no logras verlo por tí misma, espero de corazón que encuentres a alguien que te lo muestre y 
+            demuestre. Nunca, pero nunca aceptes menos de lo que te mereces o, ¿acaso has conocido de alguna
+            reina que debe mostrar reverencia a un súbdito?
+            Solo quisiera pedirte algo por una última vez, que cuando duermas, aunque sea una vez, sueñes con lo
+            que pudimos haber sido.
+            Fue un placer cada día que pase contigo, siempre fue un placer si estaba contigo. 
+            Te ama todavía, Renato.
+        </p>
+        <a href="index.html" class="btn-back">← Volver al mapa</a>
     </div>
 
-    <script src="stars.js"></script> 
-    <script src="escritos.js"></script>
+    <!-- Script del Canvas Animado -->
+    <script src="stars.js" defer></script>
 </body>
+
 </html>
