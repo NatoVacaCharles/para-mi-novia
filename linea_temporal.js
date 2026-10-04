@@ -138,9 +138,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 <button id="btn-final-gift" onclick="redireccionarPaginaCumpleaños()">
                     🎁
                 </button>
-                <button id="btn-final-gift" onclick="redireccionarPaginaEscritos()">
-                    📖
-                </button>
             `;
         } else {
             finalGiftSection.classList.remove("unlocked");
